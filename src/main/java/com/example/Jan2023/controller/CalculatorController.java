@@ -34,8 +34,7 @@ public class CalculatorController {
     public double divide(@PathVariable("first") double firstNumber,
                       @PathVariable("second") double secondNumber){
         return firstNumber / secondNumber;
-
-    }
+   }
 
 
 }
