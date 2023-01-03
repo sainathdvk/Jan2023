@@ -36,5 +36,11 @@ public class CalculatorController {
         return firstNumber / secondNumber;
    }
 
+   @GetMapping("/remainderOf/{first}/{second}")
+    public double remainderOf(@PathVariable("first") double firstNumber,
+                              @PathVariable("second") double secondNumber){
+       return firstNumber % secondNumber;
+   }
+
 
 }
